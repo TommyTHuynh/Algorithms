@@ -11,7 +11,7 @@ protected:
 	TreeNode<T> *llink;
 	TreeNode<T> *rlink;
 public:
-	TreeNode *GetNewNode(T data);
+	friend TreeNode *GetNewNode(T data);
 	friend void preorder(TreeNode<T> *root);
 	friend void inorder(TreeNode<T> *root);
 	friend void postorder(TreeNode<T> *root);
