@@ -14,7 +14,8 @@ public:
 	friend void preorder(TreeNode<T> *root);
 	friend void inorder(TreeNode<T> *root);
 	friend void postorder(TreeNode<T> *root);
-	friend void insert(T item);
+	friend TreeNode* insert(TreeNode<T> *root,T item);
+	friend TreeNode* search(T data);
 };
 
 
