@@ -27,3 +27,15 @@ void postorder(TreeNode<T>* root) /*<left><root><right>*/
 	cout << root->data << " ";
 	postorder(root->rlink);
 }
+
+template <class T>
+TreeNode *GetNewNode(T data)
+{
+
+}
+
+template <class T>
+TreeNode* insert(TreeNode<T> *root, T item) 
+{
+
+}

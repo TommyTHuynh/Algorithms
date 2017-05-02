@@ -11,11 +11,10 @@ protected:
 	TreeNode<T> *llink;
 	TreeNode<T> *rlink;
 public:
+	TreeNode *GetNewNode(T data);
 	friend void preorder(TreeNode<T> *root);
 	friend void inorder(TreeNode<T> *root);
 	friend void postorder(TreeNode<T> *root);
 	friend TreeNode* insert(TreeNode<T> *root,T item);
-	friend TreeNode* search(T data);
 };
-
 
