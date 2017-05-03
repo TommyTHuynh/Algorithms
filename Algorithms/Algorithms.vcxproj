@@ -21,11 +21,13 @@
   <ItemGroup>
     <ClInclude Include="AVL.h" />
     <ClInclude Include="BinaryTree.h" />
+    <ClInclude Include="LinearProbing.h" />
     <ClInclude Include="SortingAlgorithms.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="AVL.cpp" />
     <ClCompile Include="BinaryTree.cpp" />
+    <ClCompile Include="LinearProbing.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
