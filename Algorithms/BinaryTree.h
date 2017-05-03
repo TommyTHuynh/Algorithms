@@ -16,6 +16,6 @@ public:
 	friend void postorder(TreeNode<T> *root); /*<left><right><root>*/
 	friend TreeNode *GetNewNode(T data); 
 	friend TreeNode* insert(TreeNode<T> *root,T item);
-	friend bool search(TreeNode<T> *root, T item);
+	friend bool search(TreeNode<T> *root, T item);  
 };
 
