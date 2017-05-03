@@ -10,32 +10,41 @@ void preorder(TreeNode<T>* root) /*<root><left><right>*/
 }
 
 template <class T>
-void inorder(TreeNode<T>* root) /*<left><right><root>*/
+void inorder(TreeNode<T>* root) /*<left><root><right>*/
 {
 	if (root == NULL) return;
 	inorder(root->llink);
-	inorder(root->rlink);
 	cout << root->data << " ";
+	inorder(root->rlink);
 }
 
-
 template <class T>
-void postorder(TreeNode<T>* root) /*<left><root><right>*/
+void postorder(TreeNode<T>* root) /*<left><right><root>*/
 {
 	if (root == NULL) return;
 	postorder(root->llink);
-	cout << root->data << " ";
 	postorder(root->rlink);
+	cout << root->data << " ";
 }
 
 template <class T>
-TreeNode *GetNewNode(T data)
+TreeNode<T> *GetNewNode(T data)
 {
-
+	TreeNode<T> node = new TreeNode();
+	node->data = data;
+	node->llink = NULL;
+	node->rlink = NULL;
+	return node;
 }
 
 template <class T>
-TreeNode* insert(TreeNode<T> *root, T item) 
+TreeNode<T>* insert(TreeNode<T> *root, T item) 
 {
-
+	if (root == NULL)
+		root = GetNewNode(item);
+	else if (item > root->data)
+		root->llink = insert(root, item);
+	else if (item < root->data)
+		root->rlink = insert(root, item);
+	return root;
 }
