@@ -16,7 +16,7 @@ void inorder(TreeNode<T>* root) /*<left><root><right>*/
 	inorder(root->llink);
 	cout << root->data << " ";
 	inorder(root->rlink);
-}
+} 
 
 template <class T>
 void postorder(TreeNode<T>* root) /*<left><right><root>*/
