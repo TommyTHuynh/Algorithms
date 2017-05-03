@@ -5,7 +5,7 @@
 using namespace std;
 
 /*Bubble Sorting O(n^2)*/
-void bubbleSort(int arr[], int size) //8 lines inside
+void bubbleSort(int arr[], int size) 
 {
 	for (int i = 0; i < size; i++) //repeatedly swap adjacent elements if they are in the wrong order
 		for (int j = 0; j < size - i - 1; j++) //***note*** j < size - i - 1
