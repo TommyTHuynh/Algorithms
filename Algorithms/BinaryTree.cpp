@@ -52,8 +52,12 @@ TreeNode<T>* insert(TreeNode<T> *root, T item)
 template <class T>
 bool search(TreeNode<T> *root, T item)
 {
-	if (root == NULL) return false;
-	else if (root->data == item) return true;
-	else if (item < root->data) return search(root->llink, item);
-	else return search(root->rlink, item);
+	if (root == NULL)
+		return false;
+	else if (root->data == item) 
+		return true;
+	else if (item < root->data) 
+		return search(root->llink, item);
+	else
+		return search(root->rlink, item);
 }
